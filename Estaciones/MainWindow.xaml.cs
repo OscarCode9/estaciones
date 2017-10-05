@@ -23,7 +23,7 @@ namespace Estaciones
         public MainWindow()
         {
             InitializeComponent();
-            qr.Text = "6879363";
+            qr.Text = "0000";
            
 
         }
