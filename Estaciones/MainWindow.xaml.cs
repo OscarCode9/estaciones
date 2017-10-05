@@ -62,6 +62,7 @@ namespace Estaciones
                 gauOk = 1,
                 visNg = 0,
                 visOk = 1
+
             };
 
             if(data.valorst1 > 45.70+0.075 || data.valorst1 < 45.70 - 0.075)
@@ -80,6 +81,29 @@ namespace Estaciones
             {
                 CambiarEstadoBoton(2, 1);
             }
+
+            if(data.valorst3 > 30.5 + 0.2 || data.valorst3 < 30.5 - 0.2)
+            {
+                CambiarEstadoBoton(3, 1);
+            }
+            else
+            {
+                CambiarEstadoBoton(3, 0);
+
+            }
+
+            if(data.valorst4 > 36.4 +  0.15 || data.valorst4< 36.4)
+            {
+                CambiarEstadoBoton(4, 1);
+
+            }
+            else
+            {
+                CambiarEstadoBoton(4, 0);
+
+            }
+
+
 
 
             DatosGrid.Items.Add(data);
