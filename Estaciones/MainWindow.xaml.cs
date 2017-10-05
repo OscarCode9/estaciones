@@ -24,7 +24,8 @@ namespace Estaciones
         {
             InitializeComponent();
             qr.Text = "6879363";
-           
+            int dqr = 123456;
+
 
         }
 
