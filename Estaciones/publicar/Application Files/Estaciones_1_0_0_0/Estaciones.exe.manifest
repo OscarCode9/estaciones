@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Estaciones.exe" version="1.0.0.0" publicKeyToken="010dfa658bbf9a7d" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Estaciones" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Estaciones.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Opciones del manifiesto de Control de cuentas de usuario
+          Si desea cambiar el nivel de Control de cuentas de usuario de Windows, reemplace el 
+          nodo requestedExecutionLevel por alguno de los siguientes.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Si desea usar la virtualización de archivos y del Registro para la 
+         compatibilidad con versiones anteriores, elimine el nodo requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Estaciones.exe" size="115224">
+      <assemblyIdentity name="Estaciones" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>8ljN++mmvkxdwKF6Z2DC/3UvdsybHw4sumzH75WJjCo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Estaciones.exe.config" size="187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>xm4bo26HQ0LNVwz1vdPYtzhkpMnp2AI5i+f0b+OahTI=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-H8CSC90\Oscar Martinez" issuerKeyHash="d4e735f5a4b0725dcaed81966b247581802f628f" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>z1G8lh0KKYBPmNKKxe497V2DLtdCwzattZ7QmWq3mgw=</DigestValue></Reference></SignedInfo><SignatureValue>Y+BD+iC3fHBxsUoQUS/u5HwshnQIQ5eMBbS6qnLODBOOe7u0Td/XDni/746nhncgkOVhTjYHGe4GTvCyaFs7+Vhr+2y6tpHvfBrxW+32YeFAOAlazcQxZTPdLpaDFEHSwkG4w9LmPp95gJ98SYH7ALU/yi6LcVaHJ41uMptrouo=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>8fyBr1e6bZ9o/fACjIVgb1+8Bn4FD/nhfnTuRVVQlIxxr3BrlqhrDsBAbAtZvPVPU843XeI5/tb0XG0oq+n49Q4GbRFgqGKya/Dp1z8r1MAodJGCF8CaXYTLSxMRt/tUlQt2f9FuUL+UqJpYV8E6WAtkxt0Q3JQzhTae2VvuzGE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="0c9ab76a99d09eb5ad36c342d72e835ded3deec58ad2984f80290a1d96bc51cf" Description="" Url=""><as:assemblyIdentity name="Estaciones.exe" version="1.0.0.0" publicKeyToken="010dfa658bbf9a7d" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-H8CSC90\Oscar Martinez</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>hpIFxNeyXfwwjAYZY5n4z9AAZvXazGvcxdPDxBr3nuU=</DigestValue></Reference></SignedInfo><SignatureValue>oHu/iuH3QBprRRB22dkWXUrFtkxENC5N6MqqKQ6ZQ5mlEQPDYo27d0Qw+Dbovvr4wvMamIQs+iKOB0oEv24g69UitwwebGJTcDG0fAHwQ4n3Af4xXpBpYLif0DWiVc7Ix5DThZPuFX2xZv0REoW7M1PDGed/ZnN5ULV0t5YjnCc=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>8fyBr1e6bZ9o/fACjIVgb1+8Bn4FD/nhfnTuRVVQlIxxr3BrlqhrDsBAbAtZvPVPU843XeI5/tb0XG0oq+n49Q4GbRFgqGKya/Dp1z8r1MAodJGCF8CaXYTLSxMRt/tUlQt2f9FuUL+UqJpYV8E6WAtkxt0Q3JQzhTae2VvuzGE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIICETCCAXqgAwIBAgIQOcMjS3rLOYlDLwr8zd/3xTANBgkqhkiG9w0BAQsFADBHMUUwQwYDVQQDHjwARABFAFMASwBUAE8AUAAtAEgAOABDAFMAQwA5ADAAXABPAHMAYwBhAHIAIABNAGEAcgB0AGkAbgBlAHowHhcNMTcxMDA0MjAzNzEyWhcNMTgxMDA1MDIzNzEyWjBHMUUwQwYDVQQDHjwARABFAFMASwBUAE8AUAAtAEgAOABDAFMAQwA5ADAAXABPAHMAYwBhAHIAIABNAGEAcgB0AGkAbgBlAHowgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAPH8ga9Xum2faP3wAoyFYG9fvAZ+BQ/54X507kVVUJSMca9wa5aoaw7AQGwLWbz1T1PON13iOf7W9FxtKKvp+PUOBm0RYKhismvw6dc/K9TAKHSRghfAml2Ey0sTEbf7VJULdn/RblC/lKiaWFfBOlgLZMbdENyUM4U2ntlb7sxhAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAYovcO198+HmxfpO6/vpdJTOpVMTJ/L0IzZVb/yibneuON5v8W+K/XAN5ixp7XXepUAXosZc5H7D2gckOFkQrdTVIbtFgsSlTyTp65pu5YihI22CusCzRpomPcJ0zMEEA50/OP0K0YKw9/ar3XOl6cvMpRDebgHHYSaYAQt9Rp1E=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
