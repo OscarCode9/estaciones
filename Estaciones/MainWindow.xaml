@@ -5,14 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Estaciones"
         mc:Ignorable="d"
-        Title="MainWindow" Height="768" Width="1366">
+        Title="MainWindow" Height="1080" Width="1920">
     <Grid x:Name="MainGrid" Loaded="MainGrid_Loaded" Margin="10,0,-10,0">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="179*"/>
             <ColumnDefinition Width="1260*"/>
             <ColumnDefinition Width="353*"/>
         </Grid.ColumnDefinitions>
-        <Grid Height="279" VerticalAlignment="Top" Background="Black" Grid.ColumnSpan="3" d:LayoutOverrides="VerticalAlignment">
+        <Grid Height="774" VerticalAlignment="Top" Background="Black" Grid.ColumnSpan="3" Margin="0,10,10,0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="403*"/>
                 <ColumnDefinition Width="90*"/>
@@ -21,7 +21,7 @@
             <TextBlock HorizontalAlignment="Left" Height="54" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" Foreground="White" FontFamily="Source Sans Pro Black" FontSize="48" Margin="10,7.767,0,0"><Run Background="Black" Text="CODE"/><Run Background="Black" Text=":"/></TextBlock>
             <TextBox x:Name="qr" Height="32" Margin="158,23,56.5,0" TextWrapping="Wrap" Text="QR456i8384" VerticalAlignment="Top" FontSize="20"/>
             <Button Content="MXShBtnStart" Margin="29.482,23.801,-50.685,0" VerticalAlignment="Top" Height="33.624" HorizontalAlignment="Left" Width="111" Grid.Column="1" IsDefault="True"/>
-            <Rectangle Margin="456.703,47,10,12.643" Grid.Column="2">
+            <Rectangle Margin="0,10,23,0" Grid.Column="2" HorizontalAlignment="Right" Width="356.442" Height="232.857" VerticalAlignment="Top">
                 <Rectangle.Fill>
                     <ImageBrush ImageSource="ok.jpg"/>
                 </Rectangle.Fill>
@@ -51,13 +51,13 @@
                         <TranslateTransform X="-0.723"/>
                     </TransformGroup>
                 </TextBlock.RenderTransform><Run Background="Black" Text="NG"/><Run Background="Black" Text=":"/></TextBlock>
-            <TextBox x:Name="ok" Height="32" Margin="343.703,10,0,0" TextWrapping="Wrap" Text="10" VerticalAlignment="Top" FontSize="20" Grid.Column="2" HorizontalAlignment="Left" Width="70.797"/>
+            <TextBox x:Name="ok" Height="32" Margin="343.703,10,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" FontSize="20" Grid.Column="2" HorizontalAlignment="Left" Width="70.797"/>
             <TextBox x:Name="ng" Height="32" Margin="343.703,47,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" FontSize="20" Grid.Column="2" HorizontalAlignment="Left" Width="70.797"/>
-            <Grid Margin="23,91.143,414,10" Grid.ColumnSpan="3">
+            <Grid Margin="10,91.143,432,10" Grid.ColumnSpan="3">
                 <Grid.Background>
-                    <ImageBrush ImageSource="botones.jpg"/>
+                    <ImageBrush ImageSource="STSBACK.jpg"/>
                 </Grid.Background>
-                <Ellipse x:Name="st1" HorizontalAlignment="Left" Margin="28,52.357,0,25" Width="100.5">
+                <Ellipse x:Name="st1" HorizontalAlignment="Left" Margin="56.738,52.357,0,0" Width="130" Height="130" VerticalAlignment="Top">
                     <Ellipse.Fill>
                         <ImageBrush ImageSource="boton.png"/>
                     </Ellipse.Fill>
@@ -68,7 +68,7 @@
                         </LinearGradientBrush>
                     </Ellipse.Stroke>
                 </Ellipse>
-                <Ellipse x:Name="st2" HorizontalAlignment="Left" Margin="175,52.357,0,25" Width="100.5">
+                <Ellipse x:Name="st2" HorizontalAlignment="Left" Margin="295,52.357,0,0" Width="130" Height="130" VerticalAlignment="Top" d:LayoutOverrides="Height">
                     <Ellipse.Fill>
                         <ImageBrush ImageSource="boton.png"/>
                     </Ellipse.Fill>
@@ -79,7 +79,7 @@
                         </LinearGradientBrush>
                     </Ellipse.Stroke>
                 </Ellipse>
-                <Ellipse x:Name="st3" HorizontalAlignment="Left" Margin="331,52.357,0,25" Width="100.5">
+                <Ellipse x:Name="st3" HorizontalAlignment="Left" Margin="541,52.357,0,0" Width="130" Height="130" VerticalAlignment="Top" d:LayoutOverrides="Height">
                     <Ellipse.Fill>
                         <ImageBrush ImageSource="boton.png"/>
                     </Ellipse.Fill>
@@ -90,7 +90,7 @@
                         </LinearGradientBrush>
                     </Ellipse.Stroke>
                 </Ellipse>
-                <Ellipse x:Name="st4" HorizontalAlignment="Right" Margin="0,52.357,329,25" Width="100.5">
+                <Ellipse x:Name="st4" HorizontalAlignment="Right" Margin="0,52.357,557,0" Width="130" Height="130" VerticalAlignment="Top" d:LayoutOverrides="Height">
                     <Ellipse.Fill>
                         <ImageBrush ImageSource="boton.png"/>
                     </Ellipse.Fill>
@@ -101,7 +101,7 @@
                         </LinearGradientBrush>
                     </Ellipse.Stroke>
                 </Ellipse>
-                <Ellipse x:Name="gaCheck" HorizontalAlignment="Right" Margin="0,52.357,176,25" Width="100.5">
+                <Ellipse x:Name="gaCheck" HorizontalAlignment="Right" Margin="0,52.357,302,0" Width="130" Height="130" VerticalAlignment="Top" d:LayoutOverrides="Height">
                     <Ellipse.Fill>
                         <ImageBrush ImageSource="boton.png"/>
                     </Ellipse.Fill>
@@ -112,7 +112,7 @@
                         </LinearGradientBrush>
                     </Ellipse.Stroke>
                 </Ellipse>
-                <Ellipse x:Name="viCheck" HorizontalAlignment="Right" Margin="0,52.357,30.5,25" Width="100.5">
+                <Ellipse x:Name="viCheck" HorizontalAlignment="Right" Margin="0,52.357,65,0" Width="130" Height="130" VerticalAlignment="Top" d:LayoutOverrides="Height">
                     <Ellipse.Fill>
                         <ImageBrush ImageSource="boton.png"/>
                     </Ellipse.Fill>
@@ -123,9 +123,39 @@
                         </LinearGradientBrush>
                     </Ellipse.Stroke>
                 </Ellipse>
+                <Label Content="Ø 45.70 ± 0.075 mm" Margin="10,225.833,0,0" HorizontalAlignment="Left" Width="120.659" Background="Black" Foreground="White" Height="32.627" VerticalAlignment="Top"/>
+                <Label Content="Φ 40.5 +0.039 /-0" Margin="249.169,221.833,0,0" Background="Black" Foreground="White" HorizontalAlignment="Left" Width="120.658" Height="32.627" VerticalAlignment="Top"/>
+                <Label Content="Φ 124.7 ± 0.075 mm" Margin="249.169,248.833,0,0" Background="Black" Foreground="White" Height="32.627" VerticalAlignment="Top" HorizontalAlignment="Left" Width="120.658"/>
+                <Label Content="30.5 ± 0.2 mm" Margin="491.167,225.833,0,0" Background="Black" Foreground="White" HorizontalAlignment="Left" Width="120.659" Height="32.627" VerticalAlignment="Top"/>
+                <Label Content="27.6 ± 0.2 mm" Margin="491.167,258.46,0,0" Background="Black" Foreground="White" HorizontalAlignment="Left" Width="120.658" Height="32.627" VerticalAlignment="Top"/>
+                <Label Content="Ø 44.5  +0/-0.15 mm" Margin="491.168,286.087,0,0" Background="Black" Foreground="White" Height="32.627" VerticalAlignment="Top" HorizontalAlignment="Left" Width="120.658"/>
+                <Label Content="Ø 42.7 ( +0/-0.2)mm" Margin="491.168,314.087,0,326.143" Background="Black" Foreground="White" HorizontalAlignment="Left" Width="120.658"/>
+                <Label Content="36.4 ± 0.15 mm" Margin="0,226.206,595.833,0" HorizontalAlignment="Right" Width="120.658" Background="Black" Foreground="White" Height="32.627" VerticalAlignment="Top"/>
+                <Label Content="Ø 38.1  +0.07/+0.045" Margin="0,253.206,584.5,0" HorizontalAlignment="Right" Width="131.991" Background="Black" Foreground="White" Height="32.627" VerticalAlignment="Top"/>
+                <Label Content="Ø 135.2 ± 0.2 mm" Margin="0,282.46,595.832,0" HorizontalAlignment="Right" Width="120.658" Background="Black" Foreground="White" Height="32.627" VerticalAlignment="Top"/>
+                <Label Content="Medida" HorizontalAlignment="Left" Margin="10,197,0,0" VerticalAlignment="Top" Foreground="White"/>
+                <Label Content="Valor" HorizontalAlignment="Left" Margin="130.659,194.873,0,0" VerticalAlignment="Top" Foreground="White"/>
+                <TextBox x:Name="v2st2" HorizontalAlignment="Left" Height="23" Margin="374.827,252.833,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="104"/>
+                <TextBox x:Name="v1st2" HorizontalAlignment="Left" Margin="374.827,224.833,0,0" TextWrapping="Wrap" Text="TextBox" Width="104" Height="23" VerticalAlignment="Top"/>
+                <TextBox x:Name="v3st3" Height="23" Margin="616.826,286.087,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" HorizontalAlignment="Left" Width="104"/>
+                <TextBox x:Name="v4st3" Margin="616.826,314.087,0,335.77" TextWrapping="Wrap" Text="TextBox" HorizontalAlignment="Left" Width="104"/>
+                <TextBox x:Name="v2st3" Height="23" Margin="616.825,258.087,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" HorizontalAlignment="Left" Width="104"/>
+                <TextBox x:Name="v1st4" Margin="0,229.206,486.832,0" TextWrapping="Wrap" Text="TextBox" HorizontalAlignment="Right" Width="104.001" Height="23" VerticalAlignment="Top"/>
+                <TextBox x:Name="v2st4" Height="23" Margin="0,258.46,486.832,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" HorizontalAlignment="Right" Width="104"/>
+                <TextBox x:Name="v1st3" Margin="616.826,230.087,0,0" TextWrapping="Wrap" Text="TextBox" HorizontalAlignment="Left" Width="104" Height="23" VerticalAlignment="Top"/>
+                <TextBox x:Name="v3st4" Height="23" Margin="0,290.087,486.831,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" HorizontalAlignment="Right" Width="104.001"/>
+                <TextBox x:Name="v1st1" HorizontalAlignment="Left" Margin="130.659,225.833,0,0" TextWrapping="Wrap" Text="TextBox" Width="104" Height="23" VerticalAlignment="Top"/>
+                <Label Content="Medida" HorizontalAlignment="Left" Margin="254.168,196,0,0" VerticalAlignment="Top" Foreground="White"/>
+                <Label Content="Valor" HorizontalAlignment="Left" Margin="374.827,193.873,0,0" VerticalAlignment="Top" Foreground="White"/>
+                <Label Content="Medida" HorizontalAlignment="Left" Margin="496.166,197,0,0" VerticalAlignment="Top" Foreground="White"/>
+                <Label Content="Valor" HorizontalAlignment="Left" Margin="616.825,194.873,0,0" VerticalAlignment="Top" Foreground="White"/>
+                <Label Content="Medida" HorizontalAlignment="Right" Margin="0,198.5,661.291,0" VerticalAlignment="Top" Foreground="White"/>
+                <Label Content="Valor" HorizontalAlignment="Right" Margin="0,196.373,554.042,0" VerticalAlignment="Top" Foreground="White"/>
+                <Button x:Name="bn1" Content="Bn1" HorizontalAlignment="Left" Margin="92.449,0,0,288.143" Width="75" Click="Btn1" VerticalAlignment="Bottom"/>
+                <Button x:Name="bn2" Content="Bn2" HorizontalAlignment="Left" Margin="92.449,0,0,263.183" Width="75" Click="Btn2" VerticalAlignment="Bottom"/>
             </Grid>
         </Grid>
-        <DataGrid x:Name="DatosGrid" Margin="0,315.96,-121.47,139.282" Grid.ColumnSpan="2" Background="#FFBFBFBF">
+        <DataGrid x:Name="DatosGrid" Margin="-72.987,0,137.168,5.282" Grid.ColumnSpan="2" Background="#FFBFBFBF" Height="179.758" VerticalAlignment="Bottom" Grid.Column="1">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Date" IsReadOnly="True" Binding="{Binding Path=date}" Width="170"></DataGridTextColumn>
                 <DataGridTextColumn Header="Code" IsReadOnly="True"  Binding="{Binding Path=code}" Width="120"></DataGridTextColumn>
@@ -148,12 +178,12 @@
             </DataGrid.Columns>
 
         </DataGrid>
-        <Label Content="ST.1" Grid.Column="1" Margin="155.85,279,0,0" VerticalAlignment="Top" Width="179.494" HorizontalAlignment="Left" FontWeight="Bold" BorderThickness="1" BorderBrush="Black" Height="36.96" RenderTransformOrigin="0.5,0.5" HorizontalContentAlignment="Center"/>
-        <Label Content="ST.2" Grid.Column="1" Margin="335.344,279,440.006,0" VerticalAlignment="Top" FontWeight="Bold" BorderThickness="1" BorderBrush="Black" Height="36.96" RenderTransformOrigin="0.5,0.5" HorizontalContentAlignment="Center"/>
-        <Label Content="ST.3" Grid.Column="1" Margin="0,279,260.012,0" VerticalAlignment="Top" Width="179.994" HorizontalAlignment="Right" FontWeight="Bold" BorderThickness="1" BorderBrush="Black" Height="36.96" RenderTransformOrigin="0.5,0.5" HorizontalContentAlignment="Center"/>
-        <Label Content="ST.4" Grid.Column="1" Margin="0,279,79.018,0" VerticalAlignment="Top" FontWeight="Bold" BorderThickness="1" BorderBrush="Black" Height="36.96" RenderTransformOrigin="0.5,0.5" HorizontalContentAlignment="Center" HorizontalAlignment="Right" Width="180.994"/>
-        <Label Content="GAUGE&#xD;&#xA;CHECK" Grid.Column="1" Margin="0,279,-19.476,0" VerticalAlignment="Top" FontWeight="Bold" BorderThickness="1" BorderBrush="Black" Height="36.96" RenderTransformOrigin="0.5,0.5" HorizontalContentAlignment="Center" HorizontalAlignment="Right" Width="98.494" FontSize="9"/>
-        <Label Content="VISUAL&#xD;&#xA;CHECK" Grid.Column="2" Margin="19.476,279,0,0" VerticalAlignment="Top" FontWeight="Bold" BorderThickness="1" BorderBrush="Black" Height="36.96" RenderTransformOrigin="0.5,0.5" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Width="101.994" FontSize="9"/>
+        <Label Content="ST.1" Grid.Column="1" Margin="273.85,0,0,185.04" VerticalAlignment="Bottom" Width="179.494" HorizontalAlignment="Left" FontWeight="Bold" BorderThickness="1" BorderBrush="Black" Height="36.96" RenderTransformOrigin="0.5,0.5" HorizontalContentAlignment="Center"/>
+        <Label Content="ST.2" Grid.Column="1" Margin="453.344,0,322.006,185.04" VerticalAlignment="Bottom" FontWeight="Bold" BorderThickness="1" BorderBrush="Black" Height="36.96" RenderTransformOrigin="0.5,0.5" HorizontalContentAlignment="Center"/>
+        <Label Content="ST.3" Grid.Column="1" Margin="0,0,142.012,185.04" VerticalAlignment="Bottom" Width="179.994" HorizontalAlignment="Right" FontWeight="Bold" BorderThickness="1" BorderBrush="Black" Height="36.96" RenderTransformOrigin="0.5,0.5" HorizontalContentAlignment="Center"/>
+        <Label Content="ST.4" Grid.Column="1" Margin="0,0,-38.982,185.04" VerticalAlignment="Bottom" FontWeight="Bold" BorderThickness="1" BorderBrush="Black" Height="36.96" RenderTransformOrigin="0.5,0.5" HorizontalContentAlignment="Center" HorizontalAlignment="Right" Width="180.994"/>
+        <Label Content="GAUGE&#xD;&#xA;CHECK" Grid.Column="2" Margin="38.982,0,0,185.04" VerticalAlignment="Bottom" FontWeight="Bold" BorderThickness="1" BorderBrush="Black" Height="36.96" RenderTransformOrigin="0.5,0.5" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Width="98.494" FontSize="9"/>
+        <Label Content="VISUAL&#xD;&#xA;CHECK" Grid.Column="2" Margin="137.476,0,137.168,185.04" VerticalAlignment="Bottom" FontWeight="Bold" BorderThickness="1" BorderBrush="Black" Height="36.96" RenderTransformOrigin="0.5,0.5" HorizontalContentAlignment="Center" FontSize="9"/>
 
     </Grid>
 </Window>
